@@ -9,7 +9,7 @@ Fonctionnalités:
 
 - Pièces définies par une lettre (C, R, T, L) et une couleur (rouge, vert, jaune, bleu).
 - Deux modes d’insertion : à droite ou à gauche de la liste principale.
-- Décalages (déphasage) : choisir une forme ou une couleur pour réorganiser la liste et créer des combos.
+- Décalages : choisir une forme ou une couleur pour réorganiser la liste et créer des combos.
 - Suppression automatique des séquences de 3 pièces identiques ou plus.
 - Système de score différent selon suppression simple ou décalage.
 - Sauvegarde / chargement d’une partie.
