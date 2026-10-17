@@ -1,12 +1,12 @@
 # Jeu de logique inspiré de Tetris — C
 
 ![Langage](https://img.shields.io/badge/Langage-C-A8B9CC?logo=c&logoColor=black)
-![Interface](https://img.shields.io/badge/Interface-Terminal-343A40)
+![Interfaces](https://img.shields.io/badge/Interfaces-Terminal%20%2B%20SDL2-343A40)
 ![Structures](https://img.shields.io/badge/Structures-Listes%20cha%C3%AEn%C3%A9es-2E8B57)
 
 ## Présentation
 
-Ce projet est un **jeu de logique en langage C**, inspiré de Tetris, qui se joue dans le **terminal**. Plutôt qu'une grille classique, il utilise une liste de pièces à manipuler pour créer des combinaisons.
+Ce projet est un **jeu de logique en langage C**, inspiré de Tetris, proposé en **deux versions** : une version dans le terminal et une interface graphique développée avec **SDL2**. Plutôt qu'une grille classique, il utilise une liste de pièces à manipuler pour créer des combinaisons.
 
 Le programme s'appuie sur des **listes doublement chaînées circulaires** pour représenter les pièces et gérer différents éléments du jeu, notamment les couleurs, l'historique et les prochaines pièces.
 
@@ -20,7 +20,7 @@ Le programme s'appuie sur des **listes doublement chaînées circulaires** pour 
 - **Calcul du score** selon le type d'action ou de suppression.
 - **Sauvegarde et chargement** des parties.
 - **Classement des dix meilleurs scores** avec pseudonymes.
-- **Affichage dynamique et coloré** dans la console avec les séquences ANSI/VT100.
+- **Affichage coloré dans le terminal** à l'aide de séquences d'échappement ANSI.\n- **Version graphique SDL2**, avec rendu des formes et affichage du texte via SDL_ttf.
 
 ## Principe du jeu
 
@@ -38,7 +38,7 @@ Le programme s'appuie sur des **listes doublement chaînées circulaires** pour 
 | **Listes doublement chaînées circulaires** | Organisation et manipulation des pièces |
 | **Gestion des couleurs et des formes** | Identification des pièces et création de combinaisons |
 | **Sauvegarde / chargement** | Conservation et reprise d'une partie |
-| **ANSI / VT100** | Mise en forme et affichage dynamique dans le terminal |
+| **Codes ANSI** | Couleurs et rafraîchissement de l'affichage terminal |\n| **SDL2 / SDL_ttf** | Fenêtre graphique, dessin des pièces et texte |
 
 ## Récupérer le projet
 
@@ -49,10 +49,7 @@ Le projet est fourni sous forme d'archive dans ce dépôt :
 Pour l'explorer :
 1. Télécharger puis extraire l'archive.
 2. Repérer les fichiers sources en C et les éventuels fichiers d'instructions.
-3. Examiner les dépendances et la procédure de compilation présentes dans l'archive.
-4. Compiler et lancer le programme suivant les indications propres au projet.
-
-> **Note :** aucune commande de compilation spécifique n'est indiquée ici, car la structure interne de l'archive et les bibliothèques nécessaires n'ont pas été vérifiées. Un terminal compatible ANSI/VT100 est utile pour bénéficier de l'affichage prévu.
+3. Pour la version terminal, consulter `tetriste.c`, `list.c` et `forme.c` (ainsi que leurs fichiers d'en-tête).\n4. Pour la version graphique, ouvrir le dossier `SDL_interface`, qui contient notamment `tavalide.c`, `SDL_Forme.c` et les fichiers associés. Cette version utilise SDL2 et SDL_ttf.
 
 ## Compétences illustrées
 
