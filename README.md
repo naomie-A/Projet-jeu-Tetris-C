@@ -24,8 +24,8 @@ Le jeu reprend certains principes de Tetris tout en reposant sur une logique de 
 - Sauvegarde / reprise d'une partie
 - Classement des meilleurs scores
 
-## Contenu du dépôt
+## Projet
 
-Le code du projet est actuellement regroupé dans l'archive `Projet_C.zip`.
+Voici le projet : **[Jeu Tetris en C](Projet_C.zip)**.
 
 > Projet réalisé dans le cadre de ma Licence Mathématiques et Informatique (MIDO) à l'Université Paris-Dauphine – PSL.
